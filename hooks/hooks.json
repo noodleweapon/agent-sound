@@ -4,7 +4,7 @@
       "hooks": [
         {
           "type": "command",
-          "command": "afplay /System/Library/Sounds/Glass.aiff &"
+          "command": "afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/stop.aiff\" &"
         }
       ]
     }
@@ -14,7 +14,7 @@
       "hooks": [
         {
           "type": "command",
-          "command": "afplay /System/Library/Sounds/Funk.aiff &"
+          "command": "afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/notification.aiff\" &"
         }
       ]
     }
