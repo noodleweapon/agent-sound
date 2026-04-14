@@ -1,0 +1,8 @@
+{
+  "name": "agent-sound",
+  "version": "0.1.0",
+  "description": "Plays a sound when Claude finishes its turn or needs your input.",
+  "author": {
+    "name": "noodleweapon"
+  }
+}
