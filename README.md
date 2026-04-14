@@ -2,8 +2,8 @@
 
 A Claude Code plugin that plays a sound when Claude finishes its turn or needs your input.
 
-- **Stop** (turn finished) → `sounds/stop.aiff`
-- **Notification** (permission prompt / idle) → `sounds/notification.aiff`
+- **Stop** (turn finished) → `sounds/stop.mp3`
+- **Notification** (permission prompt / idle) → `sounds/notification.mp3`
 
 Bundled sound files are included — no system dependencies beyond macOS `afplay`.
 
@@ -39,7 +39,7 @@ Clone the repo somewhere permanent, then add these hooks to `~/.claude/settings.
         "hooks": [
           {
             "type": "command",
-            "command": "afplay \"/path/to/agent-sound/sounds/stop.aiff\" &"
+            "command": "afplay \"/path/to/agent-sound/sounds/stop.mp3\" &"
           }
         ]
       }
@@ -49,7 +49,7 @@ Clone the repo somewhere permanent, then add these hooks to `~/.claude/settings.
         "hooks": [
           {
             "type": "command",
-            "command": "afplay \"/path/to/agent-sound/sounds/notification.aiff\" &"
+            "command": "afplay \"/path/to/agent-sound/sounds/notification.mp3\" &"
           }
         ]
       }
@@ -62,4 +62,4 @@ If `settings.json` already has a `hooks` block, merge these entries in rather th
 
 ## Customize the sounds
 
-Replace `sounds/stop.aiff` or `sounds/notification.aiff` with any `.aiff`/`.wav`/`.mp3` file `afplay` can play. The defaults are copies of the macOS system sounds Glass and Funk from `/System/Library/Sounds/`.
+Replace `sounds/stop.mp3` or `sounds/notification.mp3` with any `.aiff`/`.wav`/`.mp3` file `afplay` can play. If you change the extension, also update the paths in `hooks/hooks.json`. macOS ships a set of built-in sounds at `/System/Library/Sounds/` (Basso, Blow, Bottle, Frog, Funk, Glass, Hero, Morse, Ping, Pop, Purr, Sosumi, Submarine, Tink).

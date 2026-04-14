@@ -4,7 +4,7 @@
       "hooks": [
         {
           "type": "command",
-          "command": "afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/stop.aiff\" &"
+          "command": "afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/stop.mp3\" &"
         }
       ]
     }
@@ -14,7 +14,7 @@
       "hooks": [
         {
           "type": "command",
-          "command": "afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/notification.aiff\" &"
+          "command": "afplay \"${CLAUDE_PLUGIN_ROOT}/sounds/notification.mp3\" &"
         }
       ]
     }
